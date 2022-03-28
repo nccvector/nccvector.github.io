@@ -9,6 +9,4 @@ permalink: /blogs/
   [<font size="5">{{post.title}}</font>]({{post.url}})
   <br>
   <br>
-
-  test
 {% endfor %}

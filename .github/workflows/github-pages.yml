@@ -20,7 +20,7 @@ jobs:
       - run: sudo apt install jupyter-nbconvert
       - run: python3 setup.py --deploy
 
-      - uses: helaili/jekyll-action@v2.0.5
+      - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target_branch: gh-pages

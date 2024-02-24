@@ -1,8 +1,8 @@
 ---
 title: Non Linear Systems And Kalman Filter 
 author: vector
-date: 2021-01-15 19:24:03 +0500
-categories: [Blogging, Demo]
+date: 2024-02-24 20:45:43 +0900
+categories: robotics
 pin: true
 math: true
 mermaid: true

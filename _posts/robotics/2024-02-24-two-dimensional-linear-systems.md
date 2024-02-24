@@ -1,8 +1,8 @@
 ---
 title: Two Dimensional Linear Systems 
 author: vector
-date: 2021-01-16 21:49:10 +0500
-categories: [Blogging, Demo]
+date: 2024-02-24 20:45:43 +0900
+categories: robotics
 pin: true
 math: true
 mermaid: true

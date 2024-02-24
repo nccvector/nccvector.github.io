@@ -33,6 +33,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true
 
       # Run python to generate posts
       - run: sudo apt install jupyter-nbconvert

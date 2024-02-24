@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/posts/linear-systems-and-kalman-filter/</loc>
-<lastmod>2021-01-13T23:30:57+08:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/posts/non-linear-systems-and-kalman-filter/</loc>
-<lastmod>2021-01-15T22:24:03+08:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/posts/two-dimensional-linear-systems/</loc>
-<lastmod>2021-01-17T00:49:10+08:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/blogs/</loc>
-<lastmod>2024-02-24T19:32:03+08:00</lastmod>
+<lastmod>2024-02-24T19:34:22+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about-me/</loc>
-<lastmod>2024-02-24T19:32:03+08:00</lastmod>
+<lastmod>2024-02-24T19:34:22+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/categories/blogging/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/categories/demo/</loc>
 </url>
 </urlset>

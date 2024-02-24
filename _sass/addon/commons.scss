@@ -124,7 +124,7 @@ kbd {
   padding-top: 0.1rem;
   color: var(--kbd-text-color);
   background-color: var(--kbd-bg-color);
-  border-radius: 0.25rem;
+  border-radius: 0.125rem;
   border: solid 1px var(--kbd-wrap-color);
   box-shadow: inset 0 -2px 0 var(--kbd-wrap-color);
 }
@@ -201,7 +201,7 @@ i {
   .post-tag {
     line-height: 1.05rem;
     font-size: 0.85rem;
-    border-radius: 0.8rem;
+    border-radius: 0.125rem;
     padding: 0.3rem 0.5rem;
     margin: 0 0.35rem 0.5rem 0;
 
@@ -490,7 +490,7 @@ main {
   display: inline-block;
   min-width: 2rem;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: 0.125rem;
   border: 1px solid var(--btn-border-color);
   padding: 0 0.4rem;
   color: var(--text-muted-color);
@@ -502,7 +502,7 @@ main {
 }
 
 .rounded-10 {
-  border-radius: 10px !important;
+  border-radius: 3px !important;
 }
 
 .img-link {
@@ -782,7 +782,7 @@ $btn-mb: 0.5rem;
 
         display: flex;
         align-items: center;
-        border-radius: 0.75rem;
+        border-radius: 0.125rem;
         font-weight: 600;
 
         &:hover {
@@ -829,7 +829,7 @@ $btn-mb: 0.5rem;
       width: $btn-size;
       height: $btn-size;
       margin-bottom: $btn-mb; // multi line gap
-      border-radius: 50%;
+      border-radius: 5%;
       color: var(--sidebar-btn-color);
       background-color: var(--sidebar-btn-bg);
       text-align: center;
@@ -874,7 +874,7 @@ $btn-mb: 0.5rem;
       content: '';
       width: $btn-border-width;
       height: $btn-border-width;
-      border-radius: 50%;
+      border-radius: 5%;
       margin-bottom: $btn-mb;
     }
   } /* .sidebar-bottom */
@@ -980,7 +980,7 @@ $btn-mb: 0.5rem;
 search {
   display: flex;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.125rem;
   border: 1px solid var(--search-border-color);
   background: var(--main-bg);
   padding: 0 0.5rem;
@@ -1150,7 +1150,7 @@ search {
   padding: 0;
   width: $back2top-size;
   height: $back2top-size;
-  border-radius: 50%;
+  border-radius: 5%;
   border: 1px solid var(--btn-backtotop-border-color);
   transition: transform 0.2s ease-out;
   -webkit-transition: transform 0.2s ease-out;
@@ -1202,7 +1202,7 @@ search {
     &.show {
       display: block;
       min-width: 20rem;
-      border-radius: 0.5rem;
+      border-radius: 0.125rem;
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
       background-color: rgba(255, 255, 255, 0.5);

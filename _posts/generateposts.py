@@ -112,7 +112,7 @@ for notebookFilePath in glob.iglob(root_dir + '**/*.ipynb', recursive=True):
     # Remove notebooks if deploying static website for hosting (to make the site light-weight)
     if args.deploy:
         print("Removing notebooks")
-        subprocess.run(["sudo", "rm", filename])
+        subprocess.run(["sudo", "rm", notebookFilename])
 
     # Go back one dir
     os.chdir('..')

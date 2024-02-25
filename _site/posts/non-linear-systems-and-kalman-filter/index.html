@@ -39,11 +39,11 @@
 <meta property="og:url" content="http://localhost:4000/posts/non-linear-systems-and-kalman-filter/" />
 <meta property="og:site_name" content="Faizan Ali" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-02-24T19:45:43+08:00" />
+<meta property="article:published_time" content="2021-01-15T22:24:03+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Non Linear Systems And Kalman Filter" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Faizan Ali"},"dateModified":"2024-02-25T09:42:47+08:00","datePublished":"2024-02-24T19:45:43+08:00","description":"For non linear systems, we cannot use linear equations but the equations of Kalman filter are linear. A remedy that comes to mind is to do linear approximation of the non-linear functions. For a non-linear motions model f you can approximate the matrix A by taking its jacobian. Similarly you can do the same for a non-linear observation model h and find the matrix H. The only thing is that you have to do this linear approximation in a loop, before every update. I am using a symbolic package casadi, but you can get the same results using sympy. I create a symbolic function for jacobian and just evaluate the jacobian at xi and extrapolate the state to xi+1 using the non-linear function. The jacobian matrix can now be used in Kalman filter equations.","headline":"Non Linear Systems And Kalman Filter","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"},"url":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Faizan Ali"},"dateModified":"2021-01-15T22:24:03+08:00","datePublished":"2021-01-15T22:24:03+08:00","description":"For non linear systems, we cannot use linear equations but the equations of Kalman filter are linear. A remedy that comes to mind is to do linear approximation of the non-linear functions. For a non-linear motions model f you can approximate the matrix A by taking its jacobian. Similarly you can do the same for a non-linear observation model h and find the matrix H. The only thing is that you have to do this linear approximation in a loop, before every update. I am using a symbolic package casadi, but you can get the same results using sympy. I create a symbolic function for jacobian and just evaluate the jacobian at xi and extrapolate the state to xi+1 using the non-linear function. The jacobian matrix can now be used in Kalman filter equations.","headline":"Non Linear Systems And Kalman Filter","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"},"url":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -122,6 +122,11 @@
 
   <!-- A placeholder to allow defining custom metadata -->
 
+
+  <!-- Mathjax Support -->
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
 </head>
 
 
@@ -821,41 +826,18 @@
 
 <time
   
-  data-ts="1708775143"
+  data-ts="1610720643"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Feb 24, 2024
+  Jan 15, 2021
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1708825367"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Feb 25, 2024
-</time>
-
-        </span>
       
 
       
@@ -1434,7 +1416,7 @@ I am using a symbolic package <code class="language-plaintext highlighter-rouge"
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/robotics/">robotics</a>
+          <a href="/categories/roboticsstate-estimation/">roboticsstate-estimation</a>
       </div>
     
 
@@ -1548,6 +1530,27 @@ I am using a symbolic package <code class="language-plaintext highlighter-rouge"
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/hand-eye-calibration/">Hand Eye Calibration</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/laser-calibration/">Laser Calibration</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/two-dimensional-linear-systems/">Two Dimensional Linear Systems</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/non-linear-systems-and-kalman-filter/">Non Linear Systems And Kalman Filter</a>
         </li>
       
@@ -1556,13 +1559,6 @@ I am using a symbolic package <code class="language-plaintext highlighter-rouge"
         
         <li class="text-truncate lh-lg">
           <a href="/posts/linear-systems-and-kalman-filter/">Linear Systems And Kalman Filter</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/two-dimensional-linear-systems/">Two Dimensional Linear Systems</a>
         </li>
       
     </ul>
@@ -1690,11 +1686,11 @@ I am using a symbolic package <code class="language-plaintext highlighter-rouge"
 
 <time
   
-  data-ts="1708775143"
+  data-ts="1610551857"
   data-df="ll"
   
 >
-  Feb 24, 2024
+  Jan 13, 2021
 </time>
 
               <h4 class="pt-0 my-2">Linear Systems And Kalman Filter</h4>
@@ -1727,11 +1723,11 @@ We are going to study some state of the art filters and their performance and be
 
 <time
   
-  data-ts="1708775143"
+  data-ts="1610815750"
   data-df="ll"
   
 >
-  Feb 24, 2024
+  Jan 17, 2021
 </time>
 
               <h4 class="pt-0 my-2">Two Dimensional Linear Systems</h4>

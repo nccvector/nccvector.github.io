@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Faizan Ali</title>
   <subtitle>A Robotics software engineer with a keen interest in computer graphics.</subtitle>
-  <updated>2024-02-25T09:59:34+08:00</updated>
+  <updated>2024-02-25T12:50:06+08:00</updated>
   <author>
     <name></name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,111 @@
 
   
   <entry>
+    <title>Laser Calibration</title>
+    <link href="http://localhost:4000/posts/laser-calibration/" rel="alternate" type="text/html" title="Laser Calibration" />
+    <published>2024-02-25T11:10:46+08:00</published>
+  
+    <updated>2024-02-25T11:10:46+08:00</updated>
+  
+    <id>http://localhost:4000/posts/laser-calibration/</id>
+    <content src="http://localhost:4000/posts/laser-calibration/" />
+    <author>
+      <name>vector</name>
+    </author>
+
+  
+    
+    <category term="roboticscalibration" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Trying to find equations for laser calibration using sympy
+
+import numpy as np
+import sympy as sm
+import scipy.spatial.transform as transform
+np.set_printoptions(suppress=True)
+sm.init_printing()
+
+
+# AX = ZB
+cardinalSymbols = ['x', 'y', 'z']
+
+aSymbols = [sm.Symbol('a' + str(i)) for i in range(3 * 4)]
+zpSymbols = [sm.Symbol('z_' + sym) for sym in cardinalSymbols]
+xpSymbols = [sm.Symbol('x_' + sy...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Hand Eye Calibration</title>
+    <link href="http://localhost:4000/posts/hand-eye-calibration/" rel="alternate" type="text/html" title="Hand Eye Calibration" />
+    <published>2024-02-25T11:10:46+08:00</published>
+  
+    <updated>2024-02-25T11:10:46+08:00</updated>
+  
+    <id>http://localhost:4000/posts/hand-eye-calibration/</id>
+    <content src="http://localhost:4000/posts/hand-eye-calibration/" />
+    <author>
+      <name>vector</name>
+    </author>
+
+  
+    
+    <category term="roboticscalibration" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Finding hand-eye calibration equations using sympy
+
+import numpy as np
+import sympy as sm
+import scipy.spatial.transform as transform
+np.set_printoptions(suppress=True)
+sm.init_printing()
+
+from IPython.display import Math, display
+
+
+Creating symbols
+
+# AX = ZB
+symbolLetterTemplates = ['a', 'x', 'z', 'b']
+allSymbols = []
+
+# Creating 12 symbols for each matrix
+for template in symbolLetterTemplate...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Two Dimensional Linear Systems</title>
     <link href="http://localhost:4000/posts/two-dimensional-linear-systems/" rel="alternate" type="text/html" title="Two Dimensional Linear Systems" />
-    <published>2024-02-24T19:45:43+08:00</published>
+    <published>2021-01-17T00:49:10+08:00</published>
   
-    <updated>2024-02-24T19:45:43+08:00</updated>
+    <updated>2021-01-17T00:49:10+08:00</updated>
   
     <id>http://localhost:4000/posts/two-dimensional-linear-systems/</id>
     <content src="http://localhost:4000/posts/two-dimensional-linear-systems/" />
@@ -34,7 +134,7 @@
 
   
     
-    <category term="robotics" />
+    <category term="roboticsstate-estimation" />
     
   
 
@@ -66,9 +166,9 @@ The control vector is
   <entry>
     <title>Non Linear Systems And Kalman Filter</title>
     <link href="http://localhost:4000/posts/non-linear-systems-and-kalman-filter/" rel="alternate" type="text/html" title="Non Linear Systems And Kalman Filter" />
-    <published>2024-02-24T19:45:43+08:00</published>
+    <published>2021-01-15T22:24:03+08:00</published>
   
-    <updated>2024-02-25T09:42:47+08:00</updated>
+    <updated>2021-01-15T22:24:03+08:00</updated>
   
     <id>http://localhost:4000/posts/non-linear-systems-and-kalman-filter/</id>
     <content src="http://localhost:4000/posts/non-linear-systems-and-kalman-filter/" />
@@ -78,7 +178,7 @@ The control vector is
 
   
     
-    <category term="robotics" />
+    <category term="roboticsstate-estimation" />
     
   
 
@@ -101,9 +201,9 @@ The only thing is that you h...
   <entry>
     <title>Linear Systems And Kalman Filter</title>
     <link href="http://localhost:4000/posts/linear-systems-and-kalman-filter/" rel="alternate" type="text/html" title="Linear Systems And Kalman Filter" />
-    <published>2024-02-24T19:45:43+08:00</published>
+    <published>2021-01-13T23:30:57+08:00</published>
   
-    <updated>2024-02-24T19:45:43+08:00</updated>
+    <updated>2021-01-13T23:30:57+08:00</updated>
   
     <id>http://localhost:4000/posts/linear-systems-and-kalman-filter/</id>
     <content src="http://localhost:4000/posts/linear-systems-and-kalman-filter/" />
@@ -113,7 +213,7 @@ The only thing is that you h...
 
   
     
-    <category term="robotics" />
+    <category term="roboticsstate-estimation" />
     
   
 

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Faizan Ali</title>
   <subtitle>A Robotics software engineer with a keen interest in computer graphics.</subtitle>
-  <updated>2024-02-24T23:28:18+08:00</updated>
+  <updated>2024-02-25T09:41:13+08:00</updated>
   <author>
     <name></name>
     <uri>http://localhost:4000/</uri>
@@ -90,32 +90,8 @@ The control vector is
 
 
 
-      import numpy as np
-import matplotlib.pyplot as plt
-import copy
-from casadi import *
-%matplotlib notebook
-
-
-Simulation
-
-# Total simulation time (seconds)
-T = 10
-
-# delta-time (Resolution)
-dt = 0.1  # 0.1 seconds
-
-# Number of simulation time-steps
-steps = int(T/dt)
-
-# Ground truth states
-X_gt = []
-
-# Simulation Time
-t = np.linspace(0, T, steps)
-
-# Generating sine-wave acceleration commands
-U = np...
+      For non linear systems, we cannot use linear equations but the equations of Kalman filter are linear. A remedy that comes to mind is to do linear approximation of the non-linear functions. For a non-linear motions model f you can approximate the matrix A by taking its jacobian. Similarly you can do the same for a non-linear observation model h and find the matrix H.
+The only thing is that you h...
     </summary>
   
 

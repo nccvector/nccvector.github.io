@@ -466,20 +466,7 @@ In this example we will consider a two dimensional, holonomic system. We would l
 
 
 
-                import numpy as np
-import matplotlib.pyplot as plt
-import copy
-from casadi import *
-%matplotlib notebook
-
-
-Simulation
-
-# Total simulation time (seconds)
-T = 10
-
-# delta-time (Resolution)
-dt = 0.1  ...
+                For non linear systems, we cannot use linear equations but the equations of Kalman filter are linear. A remedy that comes to mind is to do linear approximation of the non-linear functions. For a no...
               </p>
             </div>
 

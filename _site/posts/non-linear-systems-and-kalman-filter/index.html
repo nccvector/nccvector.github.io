@@ -33,8 +33,8 @@
 <meta property="og:title" content="Non Linear Systems And Kalman Filter" />
 <meta name="author" content="Faizan Ali" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="1 2 3 4 5 import numpy as np import matplotlib.pyplot as plt import copy from casadi import * %matplotlib notebook" />
-<meta property="og:description" content="1 2 3 4 5 import numpy as np import matplotlib.pyplot as plt import copy from casadi import * %matplotlib notebook" />
+<meta name="description" content="For non linear systems, we cannot use linear equations but the equations of Kalman filter are linear. A remedy that comes to mind is to do linear approximation of the non-linear functions. For a non-linear motions model f you can approximate the matrix A by taking its jacobian. Similarly you can do the same for a non-linear observation model h and find the matrix H. The only thing is that you have to do this linear approximation in a loop, before every update. I am using a symbolic package casadi, but you can get the same results using sympy. I create a symbolic function for jacobian and just evaluate the jacobian at xi and extrapolate the state to xi+1 using the non-linear function. The jacobian matrix can now be used in Kalman filter equations." />
+<meta property="og:description" content="For non linear systems, we cannot use linear equations but the equations of Kalman filter are linear. A remedy that comes to mind is to do linear approximation of the non-linear functions. For a non-linear motions model f you can approximate the matrix A by taking its jacobian. Similarly you can do the same for a non-linear observation model h and find the matrix H. The only thing is that you have to do this linear approximation in a loop, before every update. I am using a symbolic package casadi, but you can get the same results using sympy. I create a symbolic function for jacobian and just evaluate the jacobian at xi and extrapolate the state to xi+1 using the non-linear function. The jacobian matrix can now be used in Kalman filter equations." />
 <link rel="canonical" href="http://localhost:4000/posts/non-linear-systems-and-kalman-filter/" />
 <meta property="og:url" content="http://localhost:4000/posts/non-linear-systems-and-kalman-filter/" />
 <meta property="og:site_name" content="Faizan Ali" />
@@ -43,7 +43,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Non Linear Systems And Kalman Filter" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Faizan Ali"},"dateModified":"2024-02-24T19:45:43+08:00","datePublished":"2024-02-24T19:45:43+08:00","description":"1 2 3 4 5 import numpy as np import matplotlib.pyplot as plt import copy from casadi import * %matplotlib notebook","headline":"Non Linear Systems And Kalman Filter","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"},"url":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Faizan Ali"},"dateModified":"2024-02-24T19:45:43+08:00","datePublished":"2024-02-24T19:45:43+08:00","description":"For non linear systems, we cannot use linear equations but the equations of Kalman filter are linear. A remedy that comes to mind is to do linear approximation of the non-linear functions. For a non-linear motions model f you can approximate the matrix A by taking its jacobian. Similarly you can do the same for a non-linear observation model h and find the matrix H. The only thing is that you have to do this linear approximation in a loop, before every update. I am using a symbolic package casadi, but you can get the same results using sympy. I create a symbolic function for jacobian and just evaluate the jacobian at xi and extrapolate the state to xi+1 using the non-linear function. The jacobian matrix can now be used in Kalman filter equations.","headline":"Non Linear Systems And Kalman Filter","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"},"url":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -875,9 +875,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="997 words"
+  title="1131 words"
 >
-  <em>5 min</em> read</span>
+  <em>6 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -886,7 +886,11 @@
   </header>
 
   <div class="content">
-    <div class="language-python highlighter-rouge"><div class="code-header">
+    <p>For non linear systems, we cannot use linear equations but the equations of Kalman filter are linear. A remedy that comes to mind is to do linear approximation of the non-linear functions. For a non-linear motions model <code class="language-plaintext highlighter-rouge">f</code> you can approximate the matrix <code class="language-plaintext highlighter-rouge">A</code> by taking its jacobian. Similarly you can do the same for a non-linear observation model <code class="language-plaintext highlighter-rouge">h</code> and find the matrix <code class="language-plaintext highlighter-rouge">H</code>.
+The only thing is that you have to do this linear approximation in a loop, before every update.
+I am using a symbolic package <code class="language-plaintext highlighter-rouge">casadi</code>, but you can get the same results using <code class="language-plaintext highlighter-rouge">sympy</code>. I create a symbolic function for jacobian and just evaluate the jacobian at <code class="language-plaintext highlighter-rouge">xi</code> and extrapolate the state to <code class="language-plaintext highlighter-rouge">xi+1</code> using the non-linear function. The jacobian matrix can now be used in Kalman filter equations.</p>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2

@@ -43,7 +43,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Non Linear Systems And Kalman Filter" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Faizan Ali"},"dateModified":"2024-02-24T19:45:43+08:00","datePublished":"2024-02-24T19:45:43+08:00","description":"For non linear systems, we cannot use linear equations but the equations of Kalman filter are linear. A remedy that comes to mind is to do linear approximation of the non-linear functions. For a non-linear motions model f you can approximate the matrix A by taking its jacobian. Similarly you can do the same for a non-linear observation model h and find the matrix H. The only thing is that you have to do this linear approximation in a loop, before every update. I am using a symbolic package casadi, but you can get the same results using sympy. I create a symbolic function for jacobian and just evaluate the jacobian at xi and extrapolate the state to xi+1 using the non-linear function. The jacobian matrix can now be used in Kalman filter equations.","headline":"Non Linear Systems And Kalman Filter","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"},"url":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Faizan Ali"},"dateModified":"2024-02-25T09:42:47+08:00","datePublished":"2024-02-24T19:45:43+08:00","description":"For non linear systems, we cannot use linear equations but the equations of Kalman filter are linear. A remedy that comes to mind is to do linear approximation of the non-linear functions. For a non-linear motions model f you can approximate the matrix A by taking its jacobian. Similarly you can do the same for a non-linear observation model h and find the matrix H. The only thing is that you have to do this linear approximation in a loop, before every update. I am using a symbolic package casadi, but you can get the same results using sympy. I create a symbolic function for jacobian and just evaluate the jacobian at xi and extrapolate the state to xi+1 using the non-linear function. The jacobian matrix can now be used in Kalman filter equations.","headline":"Non Linear Systems And Kalman Filter","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"},"url":"http://localhost:4000/posts/non-linear-systems-and-kalman-filter/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -834,6 +834,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1708825367"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Feb 25, 2024
+</time>
+
+        </span>
+      
 
       
 
@@ -1525,14 +1548,14 @@ I am using a symbolic package <code class="language-plaintext highlighter-rouge"
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/linear-systems-and-kalman-filter/">Linear Systems And Kalman Filter</a>
+          <a href="/posts/non-linear-systems-and-kalman-filter/">Non Linear Systems And Kalman Filter</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/non-linear-systems-and-kalman-filter/">Non Linear Systems And Kalman Filter</a>
+          <a href="/posts/linear-systems-and-kalman-filter/">Linear Systems And Kalman Filter</a>
         </li>
       
         
